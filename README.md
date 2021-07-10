@@ -1,4 +1,4 @@
-## Info from source where i stole my code: Example of basic account system on React and MongoDB
+## Example of basic account system on React and MongoDB
 This is an example web application written in React to demonstrate basic account feature with MongoDB.
 You can create an account and sign in with email or tokens.
 
