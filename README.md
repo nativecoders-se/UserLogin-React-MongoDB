@@ -1,8 +1,8 @@
-## Info from source i stole my code: Example of basic account system on React and MongoDB
+## Info from source where i stole my code: Example of basic account system on React and MongoDB
 This is an example web application written in React to demonstrate basic account feature with MongoDB.
-You can create an account and sign in with email or tokens.  I borrowed ( ported ) most of code from Meteor's account package which I love.
-I ported Meteor's account package because I could not find good examples to develop simple signup/signin system without using Meteor when I start using React
-Original git repo: https://github.com/kouohhashi/react_mongo_accounts.git
+You can create an account and sign in with email or tokens.
+
+Original git repo: https://github.com/kouohhashi/react_mongo_accounts.git (Note that i have change some parts so please use this version as example)
 
 ## Install  
 ```
