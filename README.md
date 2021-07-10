@@ -30,7 +30,8 @@ db.createUser(
 )
 exit
 ```
-# Install MongoDB Compass GUI for view data and transaction to MongoDB (I have used this a lot. Saved me a lot of time)
+# Install MongoDB Compass GUI for view data and transaction to MongoDB 
+(I have used this a lot. Saved me a lot of time)
 https://www.mongodb.com/try/download/compass
 
 
