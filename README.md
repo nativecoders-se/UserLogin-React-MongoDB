@@ -6,7 +6,7 @@ Original git repo: https://github.com/kouohhashi/react_mongo_accounts.git (Note 
 
 ## Install  
 ```
-git https://github.com/kouohhashi/react_mongo_accounts.git
+git clone https://github.com/nativecoders-se/UserLogin-React-MongoDB.git
 cd react_mongo_accounts
 npm install
 ```
