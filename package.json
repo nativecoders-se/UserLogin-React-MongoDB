@@ -28,6 +28,7 @@
   },
   "description": "This is an example of signin and signuot on reactjs and mongodb",
   "scripts": {
+    "type":"module",
     "start_react": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -53,3 +54,4 @@
     ]
   }
 }
+
