@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
 }
 
 .App-logo {
@@ -21,6 +22,58 @@
 .App-intro {
   font-size: large;
 }
+
+.profile-image{
+  width: 50%;
+  margin: auto;
+}
+
+.form{
+  width: 60%;
+  margin:7%  auto;
+}
+.dog-image{
+  width: 90%;
+}
+#container{
+  width: 50%;
+  margin-top: 4%;
+}
+.cont{
+  background: linear-gradient(to right , #01a9ac, #1D80A6);
+}
+  .icon{
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .info-head{
+    padding-top: 5%;
+    /* border-bottom: solid grey; */
+  }
+  .cont-image{
+    width: 80%;
+    margin: 20px auto;
+  }
+  .nav-bg{
+    background-color: #1D80A6;
+  }
+  .navbar{
+    padding: 2rem 1rem;
+  }
+  h5,h6{
+    text-align: center;
+   
+  }
+  #button-edit{
+    background-color: #000;
+  }
+
+  .header,.content{
+    padding: 1%;
+  }
+  
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
