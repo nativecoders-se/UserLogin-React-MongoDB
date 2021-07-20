@@ -1,22 +1,29 @@
-import React,{ useEffect } from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { Card, Row, Col } from "react-bootstrap";
+import { useHistory } from 'react-router-dom'
 import { BsPencil } from "react-icons/bs";
 import "./EditProfile.css";
 
 function EditProfile() {
-const [ user,setUser ] = useState(null);
+  const [user, setUser] = useState(null);
+  const history = useHistory();
 
-useEffect(()=>{
-  getUser();
-},[])
+  useEffect(() => {
+    getUser();
+  }, []);
 
-  async function getUser(){
-    const response = await fetch('http://localhost:5000/edit/');
+  async function getUser() {
+    const response = await fetch("http://localhost:5000/edit/");
     const data = await response.json();
     setUser(data);
   }
   console.log(user);
+
+function editProfile() {
+  history.push('/modal');
+}
+
 
   return (
     <>
@@ -30,33 +37,45 @@ useEffect(()=>{
         <div id="spacer"></div>
         <Card.Body>
           <Card.Text>
-            <h2 contenteditable="true">Valary Uhuru</h2>
-            <p contenteditable="true">Software Engineer</p>
             <Row>
               <Col>
-                <p contenteditable="true">Nairobi, Kenya</p>
+                <h2>
+                  <a href="#">Valary Uhuru</a>
+                </h2>
+                <p>Software Engineer</p>
               </Col>
-              <Col>
-                <p>< a href="#" >Contact Info </a></p>
+
+              <Col sm={4}>
+                <BsPencil onClick={ editProfile }/>
               </Col>
             </Row>
-            <p contenteditable="true">Some quick example text to build on the card title and make up the
-            bulk of the card's content.</p>
+
+            <Row>
+              <Col>
+                <p>Nairobi, Kenya</p>
+              </Col>
+              <Col sm={4}>
+                <p>
+                  <a href="#">Contact Info </a>
+                </p>
+              </Col>
+            </Row>
+            <p>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
           </Card.Text>
         </Card.Body>
       </Card>
 
-      <Card className="project-card card-cont" contenteditable="true">
+      <Card className="project-card card-cont">
         <Card.Body>
           <Row>
             <Col sm={8}>
               <h3>Projects</h3>
             </Col>
-            <Col sm={4}>
-              <BsPencil/>
-            </Col>
           </Row>
-          This is some text within a card body.
+          You can add projects from this section.
         </Card.Body>
       </Card>
     </>

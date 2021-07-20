@@ -72,6 +72,14 @@
   .header,.content{
     padding: 1%;
   }
+
+  .modal {
+    height: auto;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+}
   
 
 
