@@ -11,7 +11,9 @@ app.use(session({
   resave: true,
   saveUninitialized: false,
 }))
+
 const api = require('./routes/api');
+
 
 // Add headers
 app.use(function (req, res, next) {
