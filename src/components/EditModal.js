@@ -2,6 +2,15 @@ import React from "react";
 import "../App.css";
 
 function EditModal() {
+
+const onFileChange = ()=>{
+
+}
+
+const onFileUpload = ()=>{
+
+}
+
   return (
     <>
       <form className="ui form">
@@ -48,6 +57,12 @@ function EditModal() {
             <label>I agree to the Terms and Conditions</label>
           </div>
         </div> */}
+
+        <div>
+          <input type="file" onChange={onFileChange} />
+          <button onClick={onFileUpload}>Upload!</button>
+        </div>
+
         <button className="ui button" type="submit">
           Submit
         </button>
