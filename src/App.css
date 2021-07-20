@@ -27,6 +27,9 @@
   width: 50%;
   margin: auto;
 }
+img{
+  width: 100%;
+}
 
 .form{
   width: 60%;
@@ -70,7 +73,7 @@
   }
 
   .header,.content{
-    padding: 1%;
+    padding: 0.5%;
   }
 
   .modal {
@@ -79,6 +82,9 @@
     left: auto;
     bottom: auto;
     right: auto;
+}
+.content{
+  margin-top: 5%;
 }
   
 

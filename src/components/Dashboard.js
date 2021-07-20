@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { withRouter } from "react-router";
 import { connect } from "react-redux";
 import { LOCAL_STRAGE_KEY } from "../utils/Settings";
-import dog from "../asset/images/dog.jpg";
-import { Container, Form, Input, Button, Grid } from "semantic-ui-react";
 import profile from "../asset/images/profile.jpeg";
 import projects from "../store/index";
 import "../App.css";
@@ -55,9 +53,9 @@ class Dashboard extends Component {
         </div>
             </h3>
             <div class="card">
-              <div class="image profile-image">
+              {/* <div class="image profile-image">
                 <img src={profile} class="ui circular image" />
-              </div>
+              </div> */}
               <div class="content">
                 <div class="header">Matt Giampietro</div>
                 <div class="meta header">
