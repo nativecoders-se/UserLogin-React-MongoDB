@@ -28,6 +28,7 @@ class Dashboard extends Component {
   };
 
   handleEdit = () => {
+    //redirect
     // this.props.history.push('/edit')
   };
 
@@ -57,7 +58,9 @@ class Dashboard extends Component {
                 <img src={profile} class="ui circular image" />
               </div> */}
               <div class="content">
-                <div class="header">Matt Giampietro</div>
+                <div class="header">
+                  <h4><a  onClick={ this.handleEdit() }>Matt Giampietro</a></h4>
+                  </div>
                 <div class="meta header">
                   <a>Projects</a>
                 </div>

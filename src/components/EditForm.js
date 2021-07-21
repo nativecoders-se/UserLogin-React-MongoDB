@@ -1,13 +1,9 @@
 import React from "react";
 import "../App.css";
 
-function EditModal() {
+function EditForm() {
 
 const onFileChange = ()=>{
-
-}
-
-const onFileUpload = ()=>{
 
 }
 
@@ -24,17 +20,17 @@ const onFileUpload = ()=>{
           <input type="text" name="last-name" placeholder="Last Name" />
         </div>
 
-        {/* <div class="field">
+        <div class="field">
           <label>City</label>
           <input type="text" name="last-name" placeholder="Last Name" />
-        </div> */}
+        </div> 
 
-        {/* <div class="field">
+         <div class="field">
           <label>Country</label>
           <input type="text" name="last-name" placeholder="Last Name" />
-        </div> */}
+        </div>
 
-        <div class="two fields">
+        {/* <div class="two fields">
           <div class="field">
             <label>State</label>
             <select class="ui fluid dropdown">
@@ -50,6 +46,11 @@ const onFileUpload = ()=>{
               </div>
             </div>
           </div>
+        </div> */}
+
+        <div class="field">
+          <label>Bio</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
         </div>
         {/* <div className="field">
           <div className="ui checkbox">
@@ -57,12 +58,6 @@ const onFileUpload = ()=>{
             <label>I agree to the Terms and Conditions</label>
           </div>
         </div> */}
-
-        <div>
-          <input type="file" onChange={onFileChange} />
-          <button onClick={onFileUpload}>Upload!</button>
-        </div>
-
         <button className="ui button" type="submit">
           Submit
         </button>
@@ -71,4 +66,4 @@ const onFileUpload = ()=>{
   );
 }
 
-export default EditModal;
+export default EditForm;
