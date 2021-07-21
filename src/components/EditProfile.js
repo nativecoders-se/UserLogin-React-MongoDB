@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { Card, Row, Col } from "react-bootstrap";
-import { useHistory } from 'react-router-dom'
+import { useHistory } from "react-router-dom";
 import { BsPencil } from "react-icons/bs";
 import "./EditProfile.css";
 
 function EditProfile() {
   const [user, setUser] = useState(null);
   const history = useHistory();
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     getUser();
@@ -20,10 +21,22 @@ function EditProfile() {
   }
   console.log(user);
 
-function editProfile() {
-  history.push('/modal');
-}
+  function editProfile() {
+    history.push("/edit_form");
+  }
 
+ async function editUserProfile(){
+    const profile ={
+
+    }
+    const config = { headers: {'Content-Type': 'application/json'} };
+    const response = await axios.put('url',profile,config);
+    
+ }
+
+  const onClickContactInfo = () => {
+    setShowModal(true);
+  };
 
   return (
     <>
@@ -46,7 +59,7 @@ function editProfile() {
               </Col>
 
               <Col sm={4}>
-                <BsPencil onClick={ editProfile }/>
+                <BsPencil onClick={editProfile} />
               </Col>
             </Row>
 
@@ -55,9 +68,11 @@ function editProfile() {
                 <p>Nairobi, Kenya</p>
               </Col>
               <Col sm={4}>
-                <p>
+                <p onClick={ onClickContactInfo }>
                   <a href="#">Contact Info </a>
+                  {showModal ? <socialMediaModal /> : null}
                 </p>
+                
               </Col>
             </Row>
             <p>
@@ -80,6 +95,15 @@ function editProfile() {
       </Card>
     </>
   );
+
+  function socialMediaModal() {
+    return (
+      <div>
+        <p>Email: uhuruvalary@gmail.com</p>
+      </div>
+    );
+  }
+
 }
 
 export default EditProfile;

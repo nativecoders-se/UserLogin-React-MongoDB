@@ -1,5 +1,5 @@
 .App {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.5em;
 }
 
@@ -86,7 +86,15 @@ img{
 .content{
   margin-top: 5%;
 }
-  
+
+#card{
+  width: 60%;
+  margin: 10px auto;
+}
+.form{
+  width: 90%;
+  margin: 7 auto;
+}
 
 
 @keyframes App-logo-spin {
