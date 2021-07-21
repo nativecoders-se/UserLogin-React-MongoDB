@@ -59,7 +59,7 @@ class Dashboard extends Component {
               </div> */}
               <div class="content">
                 <div class="header">
-                  <h4><a  onClick={ this.handleEdit() }>Matt Giampietro</a></h4>
+                  <h4><a  href="#">Matt Giampietro</a></h4>
                   </div>
                 <div class="meta header">
                   <a>Projects</a>

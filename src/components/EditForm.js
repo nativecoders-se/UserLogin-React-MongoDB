@@ -9,6 +9,7 @@ const onFileChange = ()=>{
 
   return (
     <>
+    <div class="ui card" id="card">
       <form className="ui form">
         <div class="field">
           <label>First Name</label>
@@ -62,6 +63,7 @@ const onFileChange = ()=>{
           Submit
         </button>
       </form>
+      </div>
     </>
   );
 }

@@ -24,6 +24,7 @@ import { withRouter } from "react-router";
 import { LOCAL_STRAGE_KEY } from "../utils/Settings";
 import { loginWithEmailRedux } from "../actions/UserActions";
 import EditForm from './EditForm';
+import EditModal from "./EditModal";
 
 class App extends Component {
   componentDidMount() {
@@ -83,6 +84,8 @@ class App extends Component {
           <Route exact path="/edit" render={() => <EditProfile />} />
 
           <Route exact path="/modal" render={() => <EditForm />} />
+
+          <Route exact path="/edit_form" render={() => <EditModal />} />
 
           <Route exact path="/create_acount" render={() => <CreateAccont />} />
 
